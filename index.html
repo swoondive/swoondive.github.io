@@ -1,53 +1,682 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>SWOON DIVE</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/swoondive.svg" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Background Video-->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/underwater.mp4" type="video/mp4" /></video>
-        <!-- Masthead-->
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="row text-center mb-4">
-                    <img src="assets/img/swoondive-white.svg" alt="logo" height="120px">
-                  </div>
-                <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">SWOON DIVE Website is Coming Soon</h1>
-                    <p class="mb-5">We're working hard to finish the development of this site.</p>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SWOON DIVE</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="SWOON DIVE">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="//www.swoondive.com/">
+  <meta property="og:site_name" content="SWOON DIVE">
+  <meta property="og:description" content="SWOON DIVE에 오신걸 환영합니다">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="SWOON DIVE">
+  <meta name="twitter:description" content="SWOON DIVE에 오신걸 환영합니다">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+    <div class="container text-center">
+        <div class="col-md-12" data-aos="zoom-in">
+          <a class="hero-brand" href="index.html" title="Home"><img alt="SWOON Logo" src="assets/img/swoondive-gold.svg" height="180px"></a>
+        </div>
+
+      <div class="col-md-12">
+        <h1 data-aos="zoom-in" class="display-1 fw-bold">
+          SWOON DIVE
+        </h1>
+
+        <p class="tagline" data-aos="zoom-in">
+          <span class="display-6">베트남 나트랑</span><br>
+          <span class="display-4">한국인 최초</span><br>
+          <span class="display-4"><img src="assets/img/logo_padi_white.svg" height="40px"alt=""></span>
+          <span>다이빙 리조트</span>
+        </p>
+
+        <a data-aos="fade-up" class="mt-4 btn btn-full scrollto" href="#about">더 알아보기</a>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div id="logo" class="me-auto">
+        <!-- <h1><a href="index.html"><img src="assets/img/swoondive-white.svg" alt="" height="48px"></a></h1> -->
+        <!-- Uncomment below if you prefer to use a text image -->
+        <h1><a href="#hero">SWOON</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">홈</a></li>
+          <li><a class="nav-link scrollto" href="#about">소개</a></li>
+          <li><a class="nav-link scrollto" href="#trainers">강사</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">프로그램</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">교육</a></li>
+          <li><a class="nav-link scrollto" href="#contact">연락</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex align-items-center">
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a> -->
+      </div>
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <h2 class="text-center" data-aos="fade-up">환영합니다</h2>
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 img-box d-flex justify-content-center align-items-stretch position-relative" data-aos="zoom-in">
+          </div>
+          
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <!-- <h4 data-aos="fade-up">About us</h4> -->
+            
+            <p data-aos="fade-up">SWOON DIVE는 동양의 나폴리라고 불리는 <strong>베트남 나트랑</strong>에 위치한 <strong>최초 한국인 다이빙 샾</strong>으로 모든 강사진은 한국인 PADI 강사로 운영되고 있습니다</p>  
+
+            <div class="icon-box" data-aos="fade-up">
+              <div class="icon"><i class="fa-solid fa-ship"></i></div>
+              <h4 class="title">다이빙 전용 보트</h4>
+              <p class="description">쾌적한 다이빙 전용 보트에서 음식 및 휴식 공간을 제공하고 샤워실 또한 완비하고 있습니다</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+              <h4 class="title">한국인 강사진</h4>
+              <p class="description">나트랑에서 유일한 한국인 PADI 전문 강사진들로 운영되고 있습니다</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <h4 class="title">다양한 포인트</h4>
+              <p class="description">혼문 해양 공원, Moray Beac 등과 같이 다양한 코스와 포인트들이 있습니다</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="fa-solid fa-user-shield"></i></div>
+              <h4 class="title">안전 최우선</h4>
+              <p class="description">모든 프로그램 및 교육 진행 시 안전을 최우선으로 두고 진행합니다</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="fa-solid fa-splotch"></i></div>
+              <h4 class="title">최신 렌탈 장비</h4>
+              <p class="description">직접 사용해보고 엄선한 다이빙 장비들을 신규로 구매하여 최신 장비를 제공합니다</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-currency-dollar"></i></div>
+              <h4 class="title">합리적인 가격</h4>
+              <p class="description">현지 샵보다 저렴한 가격에 모든 프로그램과 교육 서비스를 제공합니다</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <!-- <section class="features" id="about">
+
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="text-center">
+          환영합니다
+        </h2>
+
+        <p>
+          SWOON DIVE는 동양의 나폴리라고 불리는 <strong>베트남 나트랑</strong>에 위치한 <strong>최초 한국인 다이빙 샾</strong>으로 모든 강사진은 한국인 PADI 강사로 운영되고 있습니다
+        </p>
+      
+        
+        <div class="row align-items-center justify-content-center">
+          <div class="feature-col col-lg-4 col-xs-12" data-aos="zoom-in">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <i class="fa-solid fa-ship"></i>
                 </div>
+              </div>
+
+              <div>
+                <h3>
+                  다이빙 전용 보트
+                </h3>
+
+                <p>
+                  쾌적한 다이빙 전용 보트에서 음식 및 휴식 공간을 제공하고 샤워실 또한 완비하고 있습니다
+                </p>
+              </div>
             </div>
-        </div>
-        <!-- Social Icons-->
-        <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
-        <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <!-- <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a> -->
-                <a class="btn btn-dark m-3" href="https://www.facebook.com/swoondive"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark m-3" href="https://www.instagram.com/swoondive/"><i class="fab fa-instagram"></i></a>
+          </div>
+
+
+          <div class="feature-col col-lg-4 col-xs-12" data-aos="zoom-in">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <i class="fa-solid fa-people-group"></i>
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  한국인 강사진
+                </h3>
+
+                <p>
+                  나트랑에서 유일한 한국인 PADI 전문 강사진들로 운영되며, 다양한 프로그램을 진행하고 있습니다
+                </p>
+              </div>
             </div>
+          </div>
+
+          <div class="feature-col col-lg-4 col-xs-12" data-aos="zoom-in">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  다양한 포인트
+                </h3>
+
+                <p>
+                  혼문 해양 공원, Moray Beac 등과 같이 다양한 코스와 자체 개발한 포인트들이 있습니다
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col col-lg-4 col-xs-12" data-aos="zoom-in">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <i class="fa-solid fa-user-shield"></i>
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  안전 최우선
+                </h3>
+
+                <p>
+                  모든 프로그램 및 교육 진행 시 안전을 최우선으로 두고 진행합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col col-lg-4 col-xs-12" data-aos="zoom-in">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <i class="fa-solid fa-splotch"></i>
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  최신 렌탈 장비
+                </h3>
+
+                <p>
+                  직접 사용해보고 엄선한 다이빙 장비들을 신규로 구매하여 최신 장비를 제공합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col col-lg-4 col-xs-12" data-aos="zoom-in">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                  <i class="bi bi-currency-dollar"></i>
+                </div>
+              </div>
+
+              <div>
+                <h3>
+                  합리적인 가격
+                </h3>
+
+                <p>
+                  현지 샵보다 저렴한 가격에 모든 프로그램과 교육 서비스를 제공합니다
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+      </div>
+    </section> -->
+    <!-- End Features Section -->
+
+    <!-- ======= Trainers Section ======= -->
+    <section id="trainers" class="trainers">
+      
+      <div class="container" data-aos="fade-up">
+        
+        <h2 class="text-center">
+          강사진을 소개합니다
+        </h2>
+        
+        <div class="description" >
+          <p class="text-center">
+            강사진들은 모두 한국인이고 PADI 강사이며 남성 3명, 여성 1명으로 구성되어있습니다
+          </p>
+        </div>
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="assets/img/trainers/bjkim.png" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>BJ Kim</h4>
+                <span>PADI Instructor</span>
+                <p>
+                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="assets/img/trainers/kall.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>KALL</h4>
+                <span>PADI IDC Staff Instructor</span>
+                <p>
+                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Luna</h4>
+                <span>PADI Instructor</span>
+                <p>
+                  Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="assets/img/trainers/leo.png" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Leo</h4>
+                <span>PADI Instructor</span>
+                <p>
+                  반갑습니다! 제주도에서 처음 다이빙을 시작하여 물뽕을 맞아 개발자 생활을 접고 PADI 강사로 활동 중인 Leo라고 합니다!
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Trainers Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section class="portfolio" id="portfolio">
+
+      <div class="container text-center">
+        <h2>
+          수중 환경을 소개합니다
+        </h2>
+
+        <p>
+          Voluptua scripserit per ad, laudem viderer sit ex. Ex alia corrumpit voluptatibus usu, sed unum convenire id. Ut cum nisl moderatius, Per nihil dicant commodo an.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-1.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-1.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      The Dude Rockin'
+                    </h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-2.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-2.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      The Dude Rockin'
+                    </h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-3.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-3.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      The Dude Rockin'
+                    </h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-4.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-4.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      The Dude Rockin'
+                    </h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-5.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-5.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      The Dude Rockin'
+                    </h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-6.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-6.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      The Dude Rockin'
+                    </h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-7.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-7.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      The Dude Rockin'
+                    </h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <a href="assets/img/porf-8.jpg" class="portfolio-lightbox" data-gallery="portfolioGallery"><img alt="" src="assets/img/porf-8.jpg">
+                <div class="portfolio-over">
+                  <div>
+                    <h3 class="card-title">
+                      The Dude Rockin'
+                    </h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Portfolio Section -->
+
+    
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="section-title">Contact Us</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>A108 Adam Street<br>New York, NY 535022</p>
+              </div>
+
+              <div>
+                <i class="bi bi-envelope"></i>
+                <p>info@example.com</p>
+              </div>
+
+              <div>
+                <i class="bi bi-phone"></i>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>SWOON DIVE</strong>. All Rights Reserved
+            </p>
+          </div>
+
+          <!-- <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html">홈</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#about">소개</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#tainers">강사</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#portfolio">커리큘럼</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#contact">연락</a>
+              </li>
+            </ul>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
