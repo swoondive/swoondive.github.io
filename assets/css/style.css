@@ -560,9 +560,9 @@ a:hover {
 /*--------------------------------------------------------------
 # Trainers
 --------------------------------------------------------------*/
-.trainers {
+/* .trainers {
 
-}
+} */
 .trainers h2 {
   color: #0070d3;
 }
@@ -690,7 +690,6 @@ a:hover {
   background: #f8f8f8;
   text-align: center;
 }
-
 .program .featured h3 {
   color: #fff;
   background: #0070d3;
@@ -707,8 +706,6 @@ a:hover {
   background: #fff;
   color: #0070d3;
 }
-
-
 
 /* ==================================================
   Contact Section
