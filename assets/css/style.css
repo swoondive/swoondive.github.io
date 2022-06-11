@@ -731,7 +731,6 @@ a:hover {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   margin-bottom: 45px;
 }
-
 .courses .section-title h2 {
   color: #0070d3;
 }
@@ -778,7 +777,7 @@ a:hover {
   margin-bottom: 0;
 }
 .courses .swiper-pagination {
-  margin-top: 50px;
+  margin-top: 20px;
   position: relative;
 }
 .courses .swiper-pagination .swiper-pagination-bullet {
