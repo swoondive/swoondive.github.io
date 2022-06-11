@@ -470,7 +470,6 @@ a:hover {
 .about p {
   font-size: 18px;
 }
-
 .about .icon-boxes h4 {
   font-size: 18px;
   margin-bottom: 15px;
@@ -560,9 +559,6 @@ a:hover {
 /*--------------------------------------------------------------
 # Trainers
 --------------------------------------------------------------*/
-/* .trainers {
-
-} */
 .trainers h2 {
   color: #0070d3;
 }
@@ -572,7 +568,6 @@ a:hover {
 }
 .trainers .member {
   text-align: center;
-  margin-bottom: 45px;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   background: #fff;
   border: 1px solid #eef0ef;
@@ -614,13 +609,11 @@ a:hover {
   margin: 0 2px;
 }
 
-
 /*--------------------------------------------------------------
 # program
 --------------------------------------------------------------*/
 .program {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
-  margin-bottom: 45px;
 }
 .program h2 {
   color: #0070d3;
@@ -713,23 +706,8 @@ a:hover {
 /*--------------------------------------------------------------
 # courses
 --------------------------------------------------------------*/
-/* .courses {
-  background: url(../img/courses-bg.jpg) center center no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.courses::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-} */
 .courses {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
-  margin-bottom: 45px;
 }
 .courses .section-title h2 {
   color: #0070d3;
