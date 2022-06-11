@@ -748,32 +748,33 @@ a:hover {
   background: rgba(255, 255, 255, 0.08);
   padding: 45px;
 }
-.courses .event-item h3 {
+.courses .course-item h3 {
   font-weight: 600;
   font-size: 26px;
   color: #0070d3;
 }
-.courses .event-item .price {
+.courses .course-item .price {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 15px;
 }
-.courses .event-item .price span {
+.courses .course-item .price span {
   border-bottom: 2px solid #0070d3;
 }
-.courses .event-item ul {
+.courses .course-item ul {
   list-style: none;
   padding: 0;
+  padding-top: 10px;
 }
-.courses .event-item ul li {
+.courses .course-item ul li {
   padding-bottom: 10px;
 }
-.courses .event-item ul i {
+.courses .course-item ul i {
   font-size: 20px;
   padding-right: 4px;
   color: #0070d3;
 }
-.courses .event-item p:last-child {
+.courses .course-item p:last-child {
   margin-bottom: 0;
 }
 .courses .swiper-pagination {
