@@ -354,11 +354,11 @@ a:hover {
 # Section
 --------------------------------------------------------------*/
 .section-title {
-  text-align: center;
   padding-bottom: 30px;
   position: relative;
 }
 .section-title h2 {
+  text-align: center;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -633,10 +633,13 @@ a:hover {
   padding: 20px;
   background: #fff;
   text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+}
+.program .box:hover {
+  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
 }
 .program h3 {
   font-weight: 400;
@@ -705,6 +708,86 @@ a:hover {
   padding: 1px 0 3px 0;
   background: #fff;
   color: #0070d3;
+}
+
+/*--------------------------------------------------------------
+# courses
+--------------------------------------------------------------*/
+/* .courses {
+  background: url(../img/courses-bg.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.courses::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+} */
+.courses {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  margin-bottom: 45px;
+}
+
+.courses .section-title h2 {
+  color: #0070d3;
+}
+.courses .section-title p {
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+@media (min-width: 1024px) {
+  .courses {
+    background-attachment: fixed;
+  }
+}
+.courses .courses-carousel {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 45px;
+}
+.courses .event-item h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #0070d3;
+}
+.courses .event-item .price {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.courses .event-item .price span {
+  border-bottom: 2px solid #0070d3;
+}
+.courses .event-item ul {
+  list-style: none;
+  padding: 0;
+}
+.courses .event-item ul li {
+  padding-bottom: 10px;
+}
+.courses .event-item ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #0070d3;
+}
+.courses .event-item p:last-child {
+  margin-bottom: 0;
+}
+.courses .swiper-pagination {
+  margin-top: 50px;
+  position: relative;
+}
+.courses .swiper-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(4, 1, 1, 0.272);
+  opacity: 1;
+}
+.courses .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #0070d3;
 }
 
 /* ==================================================
