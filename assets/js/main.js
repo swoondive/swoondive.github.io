@@ -148,6 +148,17 @@
   }, true)
 
   /**
+   * Scroll with ofset on page load with hash links in the url
+   */
+   window.addEventListener('load', () => {
+    if (window.location.hash) {
+      if (select(window.location.hash)) {
+        scrollto(window.location.hash)
+      }
+    }
+  });
+
+  /**
    * Courses slider
    */
    new Swiper('.courses-slider', {
@@ -205,11 +216,6 @@
    * Scroll with ofset on page load with hash links in the url
    */
   window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
@@ -217,5 +223,34 @@
       mirror: false
     })
   });
+
+  /**
+   * Menu isotope and filter
+   */
+   window.addEventListener('load', () => {
+    let menuContainer = select('.menu-container');
+    if (menuContainer) {
+      let menuIsotope = new Isotope(menuContainer, {
+        itemSelector: '.menu-item',
+        layoutMode: 'fitRows',
+        filter: '.filter-program'
+      });
+
+      let menuFilters = select('#menu-flters li', true);
+
+      on('click', '#menu-flters li', function(e) {
+        e.preventDefault();
+        menuFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        menuIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+
+      }, true);
+    }
+  });  
 
 })()

@@ -716,6 +716,9 @@ a:hover {
   font-size: 18px;
   margin-bottom: 45px;
 }
+.courses .container {
+  position: relative;
+}
 @media (min-width: 1024px) {
   .courses {
     background-attachment: fixed;
@@ -732,6 +735,7 @@ a:hover {
 }
 .courses .course-item .price {
   font-size: 26px;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -767,7 +771,89 @@ a:hover {
 .courses .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0070d3;
 }
-
+/*--------------------------------------------------------------
+# Prices Section
+--------------------------------------------------------------*/
+.menu {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+.menu h2 {
+  color: #0070d3;
+}
+.menu #menu-flters {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+}
+.menu #menu-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  border: 2px solid #0070d3;
+  border-radius: 50px;
+}
+.menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
+  color: #fff;
+  background: #0070d3;
+}
+.menu #menu-flters li:last-child {
+  margin-right: 0;
+}
+.menu .menu-img {
+  width: 70px;
+  border-radius: 50%;
+  float: left;
+  border: 5px solid rgba(0, 0, 0, 0.226);
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.menu .menu-content {
+  margin-top: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.menu .menu-content::after {
+  content: "......................................................................" "...................................................................." "....................................................................";
+  position: absolute;
+  left: 20px;
+  right: 0;
+  top: -4px;
+  z-index: 1;
+  color: #dad8d4;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.menu .menu-content a {
+  padding-right: 10px;
+  background: #fff;
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+  color: #0070d3;
+}
+.menu .menu-content span {
+  background: #fff;
+  position: relative;
+  z-index: 3;
+  padding: 0 10px;
+  font-weight: 600;
+}
+.menu .menu-ingredients {
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Comic Neue", sans-serif;
+  color: #948c81;
+}
 /* ==================================================
   Contact Section
   ================================================== */
