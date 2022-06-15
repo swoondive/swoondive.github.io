@@ -260,12 +260,4 @@
     }
   });
 
-/**
- * Loader
- */
-  window.addEventListener("load", () => {
-    const loader = document.querySelector(".lds-ripple");
-    loader.style.display = "none";
-  });
-
 })()
