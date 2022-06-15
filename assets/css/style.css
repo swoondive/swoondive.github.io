@@ -353,16 +353,22 @@ a:hover {
 /*--------------------------------------------------------------
 # Section
 --------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+  position: relative;
+}
 .section-title {
+  text-align: center;
   padding-bottom: 30px;
   position: relative;
 }
 .section-title h2 {
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  z-index: 2;
 }
 .section-title h2::after {
   content: "";
@@ -375,7 +381,7 @@ a:hover {
   left: calc(50% - 25px);
 }
 .section-bg {
-  background-color: #edf6ff;
+  background-color: #DFF6FF;
 }
 /*--------------------------------------------------------------
 # Hero Section
@@ -527,7 +533,7 @@ a:hover {
   font-size: 16px;
 }
 .about .img-box {
-  border-radius: 4px;
+  /* border-radius: 4px; */
   background: url("../img/parallax-bg-1.jpg") center center no-repeat;
   background-size: cover;
   min-height: 300px;
@@ -735,11 +741,11 @@ a:hover {
 }
 .courses .course-item .price {
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 .courses .course-item .price span {
+  font-family: "Poppins", sans-serif;
   border-bottom: 2px solid #0070d3;
 }
 .courses .course-item ul {
@@ -842,6 +848,7 @@ a:hover {
   color: #0070d3;
 }
 .menu .menu-content span {
+  font-family: "Poppins", sans-serif;
   background: #fff;
   position: relative;
   z-index: 3;
@@ -858,6 +865,9 @@ a:hover {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+.faq {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
 .faq .faq-list {
   padding: 0 100px;
 }
@@ -899,6 +909,7 @@ a:hover {
   top: 0;
 }
 .faq .faq-list p {
+  font-family: "Poppins", sans-serif;
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
@@ -922,6 +933,10 @@ a:hover {
     padding: 0;
   }
 }
+#faq-list-1 a {
+  display: inline;
+  padding: 0;
+}
 
 
 /* ==================================================
@@ -934,6 +949,9 @@ a:hover {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   margin-top: 30px;
+}
+.contact .info-wrap p {
+  font-family: "Poppins", sans-serif;
 }
 .contact .info {
   background: #fff;
