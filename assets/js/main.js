@@ -202,13 +202,6 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
    * Scroll with ofset on page load with hash links in the url
    */
   window.addEventListener('load', () => {
@@ -218,6 +211,13 @@
       once: true,
       mirror: false
     })
+  });
+
+  window.addEventListener('load', () => {
+    let ripple = select('.lds-ripple');
+    if (ripple) {
+      ripple.display.style = 'none';
+    }
   });
 
   /**
@@ -249,15 +249,23 @@
     }
   });
 
-  /**
+/**
  * Scroll with ofset on page load with hash links in the url
  */
-    window.addEventListener('load', () => {
+  window.addEventListener('load', () => {
     if (window.location.hash) {
       if (select(window.location.hash)) {
         scrollto(window.location.hash)
       }
     }
+  });
+
+/**
+ * Loader
+ */
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".lds-ripple");
+    loader.style.display = "none";
   });
 
 })()
