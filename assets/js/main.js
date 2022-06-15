@@ -148,6 +148,13 @@
   }, true)
 
   /**
+   * Initiate glightbox 
+   */
+  const glightbox = GLightbox({
+    selector: '.glightbox'
+  });
+
+  /**
    * Courses slider
    */
    new Swiper('.courses-slider', {
