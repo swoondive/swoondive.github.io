@@ -153,6 +153,7 @@
   const glightbox = GLightbox({
     selector: '.glightbox',
     touchNavigation: false,
+    fullscreen: { enabled: true, iosNative: false },
     config: {
       ratio: '4:3', // or '16:9'
       muted: false,
