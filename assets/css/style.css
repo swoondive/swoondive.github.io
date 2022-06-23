@@ -533,11 +533,10 @@ section {
   line-height: 24px;
   font-size: 16px;
 }
-
 .about .video-box {
   background: url("../img/parallax-bg-1.jpg") center center no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 300px;
 }
 .about .play-btn {
   width: 94px;
@@ -787,7 +786,7 @@ section {
 .courses .section-title h2 {
   color: #0070d3;
 }
-.courses .section-title p {
+.courses .description p {
   font-size: 18px;
   margin-bottom: 45px;
 }
